@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://github.com/extra2000/semantic-release-devbox/compare/v1.0.2...v1.0.3) (2020-09-30)
+
+
+### Documentations
+
+* **README:** Add badges ([51b6868](https://github.com/extra2000/semantic-release-devbox/commit/51b6868b136e7dcc514f419086774babc5053659))
+
 ### [1.0.2](https://github.com/extra2000/semantic-release-devbox/compare/v1.0.1...v1.0.2) (2020-09-30)
 
 
