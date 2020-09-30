@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://github.com/extra2000/semantic-release-devbox/compare/v1.0.1...v1.0.2) (2020-09-30)
+
+
+### Continuous Integrations
+
+* Add AppVeyor ([261be86](https://github.com/extra2000/semantic-release-devbox/commit/261be86fc7d257fac7a514e7c6e2099d3e31b9ac))
+
 ### [1.0.1](https://github.com/extra2000/semantic-release-devbox/compare/v1.0.0...v1.0.1) (2020-09-30)
 
 
