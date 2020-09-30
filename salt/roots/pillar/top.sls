@@ -1,0 +1,4 @@
+base:
+  '*':
+    - podman
+    - semantic-release
