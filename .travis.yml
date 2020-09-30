@@ -17,14 +17,10 @@ jobs:
         - sudo dpkg -i vagrant_2.2.9_x86_64.deb
         - sudo vagrant plugin install vagrant-libvirt vagrant-scp vagrant-reload
       script:
-        - travis_wait sudo vagrant up --provider=libvirt nodejs-ubuntu1804
-        - travis_wait sudo vagrant ssh nodejs-ubuntu1804 -- sudo salt-call state.highstate
-        - travis_wait sudo vagrant ssh nodejs-ubuntu1804 -- sudo salt-call state.sls sampleapps
-        - travis_wait sudo vagrant ssh nodejs-ubuntu1804 -- "cd /opt/sampleapps/apps/math && npm install"
-        - travis_wait sudo vagrant ssh nodejs-ubuntu1804 -- "cd /opt/sampleapps/apps/math && npm run dev"
-        - travis_wait sudo vagrant ssh nodejs-ubuntu1804 -- "cd /opt/sampleapps/apps/zeromq-pushpull && npm install"
-        - travis_wait sudo vagrant ssh nodejs-ubuntu1804 -- "cd /opt/sampleapps/apps/kafka-pubsub && npm install"
-        - sudo vagrant destroy --force nodejs-ubuntu1804
+        - travis_wait sudo vagrant up --provider=libvirt
+        - travis_wait sudo vagrant ssh semantic-release-box -- sudo salt-call state.sls podman
+        - travis_wait sudo vagrant ssh semantic-release-box -- sudo salt-call state.sls semantic-release.package
+        - sudo vagrant destroy --force semantic-release-box
 
     - stage: release
       install:
