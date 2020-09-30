@@ -17,6 +17,7 @@ jobs:
         - sudo dpkg -i vagrant_2.2.9_x86_64.deb
         - sudo vagrant plugin install vagrant-libvirt vagrant-scp vagrant-reload
       script:
+        - echo '{"semantic-release":{"user":"vagrant","bot":{"name":"Maximillian Papandrious","email":"max@example.com","token":"1048482827348451eb245144fac345d2e1514436"},"repo":"max/hello-world.git","nodejs":{"version":"12.18.4","nvm":{"version":"0.36.0"}}}}' > salt/roots/pillar/semantic-release.sls
         - travis_wait sudo vagrant up --provider=libvirt
         - travis_wait sudo vagrant ssh semantic-release-box -- sudo salt-call state.sls podman
         - travis_wait sudo vagrant ssh semantic-release-box -- sudo salt-call state.sls semantic-release.package
