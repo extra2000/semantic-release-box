@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/extra2000/semantic-release-box/compare/v1.0.4...v1.1.0) (2020-10-01)
+
+
+### Features
+
+* Add support to execute semantic-release on a specific branch ([445dcad](https://github.com/extra2000/semantic-release-box/commit/445dcade1f078d9ac7bc19a648b5b9f5684abf3a))
+
+
+### Continuous Integrations
+
+* **semantic-release:** Add rc, beta, and alpha release channels ([cdbe1dc](https://github.com/extra2000/semantic-release-box/commit/cdbe1dc6cc980d2a747416e1f13ae460b210bf9a))
+* **semantic-release:** Remove invalid release branches ([ae83bff](https://github.com/extra2000/semantic-release-box/commit/ae83bff2fa001eeebb652d58d3f8b851b5e048e1))
+
 ### [1.0.4](https://github.com/extra2000/semantic-release-box/compare/v1.0.3...v1.0.4) (2020-10-01)
 
 
