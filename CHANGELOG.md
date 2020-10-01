@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://github.com/extra2000/semantic-release-box/compare/v1.1.0...v1.1.1) (2020-10-01)
+
+
+### Maintenance
+
+* **podman-formula:** Patch updates ([16ebf2e](https://github.com/extra2000/semantic-release-box/commit/16ebf2ee02d7f22c80061d1e049996375e772b1c))
+
 ## [1.1.0](https://github.com/extra2000/semantic-release-box/compare/v1.0.4...v1.1.0) (2020-10-01)
 
 
