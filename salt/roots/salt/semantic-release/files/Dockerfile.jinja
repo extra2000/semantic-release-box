@@ -24,4 +24,5 @@ RUN npm install -g semantic-release conventional-changelog-conventionalcommits @
 
 ENTRYPOINT git clone https://${GITHUB_TOKEN}:@github.com/${REPO} repo \
     && cd repo \
+    && git checkout ${BRANCH} \
     && npx semantic-release --no-ci

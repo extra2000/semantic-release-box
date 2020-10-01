@@ -38,6 +38,7 @@ semantic-release:
     email: max@example.com
     token: 1048482827348451eb245144fac345d2e1514436
   repo: max/hello-world.git
+  branch: master
   nodejs:
     version: 12.18.4
     nvm:
