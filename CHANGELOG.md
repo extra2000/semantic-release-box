@@ -1,5 +1,17 @@
 # Changelog
 
+### [1.0.4](https://github.com/extra2000/semantic-release-box/compare/v1.0.3...v1.0.4) (2020-10-01)
+
+
+### Documentations
+
+* Rename semantic-release-devbox to semantic-release-box ([dfe4227](https://github.com/extra2000/semantic-release-box/commit/dfe422780a52aed6b2dc262554f3eff4885ae474))
+
+
+### Continuous Integrations
+
+* **semantic-release:** Remove scope README for docs ([6d8b40e](https://github.com/extra2000/semantic-release-box/commit/6d8b40e75c5456486a5fa049657e2f0526edd770))
+
 ### [1.0.3](https://github.com/extra2000/semantic-release-box/compare/v1.0.2...v1.0.3) (2020-09-30)
 
 
