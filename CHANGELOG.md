@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.4](https://github.com/extra2000/semantic-release-box/compare/v1.1.3...v1.1.4) (2020-10-03)
+
+
+### Fixes
+
+* **semantic-release.package.install:** Replace hardcoded username with value from pillar ([5805d80](https://github.com/extra2000/semantic-release-box/commit/5805d809928ae582611c7f3e344427c1c92e7fbb))
+
 ### [1.1.3](https://github.com/extra2000/semantic-release-box/compare/v1.1.2...v1.1.3) (2020-10-02)
 
 
