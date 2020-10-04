@@ -1,5 +1,17 @@
 # Changelog
 
+### [1.1.5](https://github.com/extra2000/semantic-release-box/compare/v1.1.4...v1.1.5) (2020-10-04)
+
+
+### Continuous Integrations
+
+* **semantic-release:** Fix patch updates with BREAKING CHANGE doesn't trigger major release ([e79a885](https://github.com/extra2000/semantic-release-box/commit/e79a88559f0ee0538728a301091fc78ce11de716))
+
+
+### Maintenance
+
+* **podman-formula:** Patch updates ([5b1d322](https://github.com/extra2000/semantic-release-box/commit/5b1d322bfb55d650ec2808f861c28af32071a8cd))
+
 ### [1.1.4](https://github.com/extra2000/semantic-release-box/compare/v1.1.3...v1.1.4) (2020-10-03)
 
 
