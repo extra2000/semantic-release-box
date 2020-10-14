@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.6](https://github.com/extra2000/semantic-release-box/compare/v1.1.5...v1.1.6) (2020-10-14)
+
+
+### Fixes
+
+* **Dockerfile:** Fix NVM installation error ([6064377](https://github.com/extra2000/semantic-release-box/commit/60643772af1db98461df05900d033cf2c6475144))
+
 ### [1.1.5](https://github.com/extra2000/semantic-release-box/compare/v1.1.4...v1.1.5) (2020-10-04)
 
 
