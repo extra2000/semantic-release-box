@@ -11,7 +11,7 @@ semantic-release-dockerfile-present:
     - source: salt://semantic-release/files/Dockerfile.jinja
     - template: jinja
 
-install-semantic-release:
+build-semantic-release:
   cmd.run:
     - name: podman build -t extra2000/semantic-release .
     - cwd: /opt/semantic-release
