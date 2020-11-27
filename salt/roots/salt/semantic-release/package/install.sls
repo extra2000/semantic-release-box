@@ -13,6 +13,6 @@ semantic-release-dockerfile-present:
 
 install-semantic-release:
   cmd.run:
-    - name: sudo sh -c "ulimit -n 524288 && exec su {{ pillar['semantic-release']['user'] }} -c 'podman build --ulimit nofile=1024:524288 -t extra2000/semantic-release .'"
+    - name: podman build -t extra2000/semantic-release .
     - cwd: /opt/semantic-release
     - runas: {{ pillar['semantic-release']['user'] }}
