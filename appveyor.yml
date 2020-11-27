@@ -9,9 +9,10 @@ install:
   - git submodule init
   - git submodule update
 build_script:
-  - echo '{"semantic-release":{"user":"vagrant","bot":{"name":"Maximillian Papandrious","email":"max@example.com","token":"1048482827348451eb245144fac345d2e1514436"},"repo":"max/hello-world.git","nodejs":{"version":"12.18.4","nvm":{"version":"0.36.0"}}}}' > salt/roots/pillar/semantic-release.sls
+  - cp -v salt/roots/pillar/semantic-release.sls.example salt/roots/pillar/semantic-release.sls
+  - cp -v vagrant/examples/Vagrantfile.semantic-release-box.fedora-32.x86_64.example vagrant/Vagrantfile.semantic-release-box
   - sudo vagrant up --provider=libvirt
-  - sudo vagrant ssh semantic-release-box -- sudo salt-call state.sls podman
-  - sudo vagrant ssh semantic-release-box -- sudo salt-call state.sls semantic-release.package
+  - sudo vagrant ssh semantic-release-box -- sudo salt-call state.highstate
+  - sudo vagrant ssh semantic-release-box -- sudo salt-call state.sls semantic-release.build
   - sudo vagrant destroy --force semantic-release-box
 test: off
