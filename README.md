@@ -18,10 +18,20 @@ $ cd semantic-release-box
 
 ## Preparing environment
 
-Create Vagrant box and install podman:
+Create `salt/roots/pillar/semantic-release.sls` based on example and then edit its values:
+```
+$ cp -v salt/roots/pillar/semantic-release.sls.example salt/roots/pillar/semantic-release.sls
+```
+
+Create a vagrant file from example:
+```
+$ cp -v vagrant/examples/Vagrantfile.semantic-release-box.fedora-32.x86_64.example vagrant/Vagrantfile.semantic-release-box
+```
+
+Create Vagrant box and apply `state.highstate`:
 ```
 $ vagrant up --provider=libvirt
-$ vagrant ssh semantic-release-box -- sudo salt-call state.sls podman
+$ vagrant ssh semantic-release-box -- sudo salt-call state.highstate
 ```
 
 
@@ -29,23 +39,7 @@ $ vagrant ssh semantic-release-box -- sudo salt-call state.sls podman
 
 Create a [new personal access token](https://github.com/settings/tokens/new) for `semantic-release` access. Make sure to enable the following [scopes](https://github.com/semantic-release/github#github-authentication).
 
-Create `salt/roots/pillar/semantic-release.sls` file, you may need to change the values:
-```
-semantic-release:
-  user: vagrant
-  bot:
-    name: Maximillian Papandrious
-    email: max@example.com
-    token: 1048482827348451eb245144fac345d2e1514436
-  repo: max/hello-world.git
-  branch: master
-  nodejs:
-    version: 12.18.4
-    nvm:
-      version: 0.36.0
-```
-
-Finally, execute:
+Execute `semantic-release` state to build and run its command:
 ```
 $ vagrant ssh semantic-release-box -- sudo salt-call state.sls semantic-release
 ```
