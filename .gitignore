@@ -1,3 +1,4 @@
 .vagrant
 salt/roots/pillar/semantic-release.sls
 vagrant/*
+!vagrant/examples
