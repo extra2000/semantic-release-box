@@ -3,4 +3,4 @@
 
 include:
   - .build
-  - .service
+  - .command
