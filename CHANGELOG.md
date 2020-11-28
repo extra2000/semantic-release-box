@@ -1,5 +1,53 @@
 # Changelog
 
+## [2.0.0](https://github.com/extra2000/semantic-release-box/compare/v1.2.0...v2.0.0) (2020-11-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vagrant, gitignore:** Required `.gitignore` file has been removed and user required to choose any Vagrant example files.
+* **package.install:** `ulimit` argument during Podman build has been removed. Thus, Podman 1.x on CentOS 7 is no longer supported.
+
+### Features
+
+* **podman-formula:** Update to [2.1.0](https://github.com/extra2000/podman-formula/releases/tag/v2.1.0) ([fe24d41](https://github.com/extra2000/semantic-release-box/commit/fe24d4103441f51c46ec10be03b8754bf3eda9a1))
+* **salt:** Add `podman-formula` into `state.highstate` ([8db14bd](https://github.com/extra2000/semantic-release-box/commit/8db14bd0b5b619ad96ad7aa2bab66ceaa1200c89))
+* **salt:** Add `swapoff` state to disable swap memory ([a4cf1b8](https://github.com/extra2000/semantic-release-box/commit/a4cf1b82bab02efe31a501560949aeecace323d8))
+* **vagrant:** Add Debian 10 `x86_64` box ([61a3733](https://github.com/extra2000/semantic-release-box/commit/61a37330179b001ba5ea25031dfbc21ad896e104))
+* **vagrant:** Add Fedora 32 `x86_64` box ([ece4401](https://github.com/extra2000/semantic-release-box/commit/ece44019bb2c0806fb7e593f4ac9d6d009f40a32))
+* **vagrant:** Add openSUSE Leap 15.2 `aarch64` box ([28af787](https://github.com/extra2000/semantic-release-box/commit/28af7877a86cb9ea4a5fdd4fc6712ce625d0fce8))
+* **vagrant:** Add openSUSE Leap 15.2 `aarch64` QEMU box ([4311263](https://github.com/extra2000/semantic-release-box/commit/43112634ba7de310ca71a7a5667259a5c5cc8be0))
+* **vagrant:** Add openSUSE Leap 15.2 `x86_64` box ([50efeb4](https://github.com/extra2000/semantic-release-box/commit/50efeb4772223b20b3a2e49cefae6effc8800b7d))
+* **vagrant:** Add openSUSE Tumbleweed `aarch64` box ([6ffddf9](https://github.com/extra2000/semantic-release-box/commit/6ffddf9f355386d3c0fc6e737cd0b84f907335e7))
+* **vagrant:** Add openSUSE Tumbleweed `aarch64` QEMU box ([4f39a19](https://github.com/extra2000/semantic-release-box/commit/4f39a193d90e042f1347a8dfa04761fb294e8c62))
+* **vagrant:** Add openSUSE Tumbleweed `x86_64` box ([e2a44f8](https://github.com/extra2000/semantic-release-box/commit/e2a44f85c352224e362b82bc449263c58a35b053))
+* **vagrant:** Add Ubuntu 20.04 `x86_64` box ([90b075f](https://github.com/extra2000/semantic-release-box/commit/90b075f167f10670da79decd20d15214eb2a18a7))
+
+
+### Code Refactoring
+
+* **gitignore:** Remove `vagrant/examples/` from `.gitignore` ([68324ab](https://github.com/extra2000/semantic-release-box/commit/68324ab54f5465bd3ddf4ef73ed1f027af90e81f))
+* **package.install:** Remove `ulimit` during Podman build ([88710aa](https://github.com/extra2000/semantic-release-box/commit/88710aa757627f70cb4866618aadc5328b9bd7ea))
+* **salt:** Rename `build.install` state to `build.semantic-release` state ([43527af](https://github.com/extra2000/semantic-release-box/commit/43527af5ea8358f1cb75a79e952aef6c9b73ba3d))
+* **salt:** Rename `package` state to `build` state ([bac121e](https://github.com/extra2000/semantic-release-box/commit/bac121e359b70fc86f5b57f5a984d561584ae2e2))
+* **salt:** Rename `service` state to `command` state ([1b4afd3](https://github.com/extra2000/semantic-release-box/commit/1b4afd3b26ec8a1be42200b76cb53d915ea52524))
+* **vagrant, gitignore:** Remove required Vagrant file and add into `.gitignore` ([8c60790](https://github.com/extra2000/semantic-release-box/commit/8c6079076dcd10c492a9aab96f8c2a29e2ace405))
+
+
+### Continuous Integrations
+
+* **AppVeyor:** Add `semantic-release` ([89ef6cc](https://github.com/extra2000/semantic-release-box/commit/89ef6cc4980017f65d601be7ef237c3c53cc3701))
+* Remove Travis CI because it is no longer free for open source project ([8b41858](https://github.com/extra2000/semantic-release-box/commit/8b4185879292df663f6e98235e86ed40f18ec6d9))
+* **semantic-release:** Write version to `VERSION.txt` ([8c1fe51](https://github.com/extra2000/semantic-release-box/commit/8c1fe516b6a07680b5596fe326f20a701e3f9785))
+* Update build instructions for Travis CI and AppVeyor ([a249636](https://github.com/extra2000/semantic-release-box/commit/a2496365bd9dcc37c0516e3584c380211ab98938))
+
+
+### Documentations
+
+* **README:** Remove Travis CI badge ([596cc21](https://github.com/extra2000/semantic-release-box/commit/596cc2175e835ff9e8a2e94ca23824d2aa603163))
+* **README:** Update instructions ([c7211a8](https://github.com/extra2000/semantic-release-box/commit/c7211a86b261576144e7359778868b7655bab907))
+* **salt/roots/pillar:** Add `semantic-release.sls.example` file ([4751c70](https://github.com/extra2000/semantic-release-box/commit/4751c7074eac37f82f4720fff588c58750d29305))
+
 ## [1.2.0](https://github.com/extra2000/semantic-release-box/compare/v1.1.6...v1.2.0) (2020-10-23)
 
 
