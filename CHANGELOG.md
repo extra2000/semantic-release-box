@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.1](https://github.com/extra2000/semantic-release-box/compare/v2.0.0...v2.0.1) (2020-11-28)
+
+
+### Documentations
+
+* **README:** Fix AppVeyor badge URL ([1524b62](https://github.com/extra2000/semantic-release-box/commit/1524b620ca27517510652fc0e313c277739d8685))
+
 ## [2.0.0](https://github.com/extra2000/semantic-release-box/compare/v1.2.0...v2.0.0) (2020-11-28)
 
 
