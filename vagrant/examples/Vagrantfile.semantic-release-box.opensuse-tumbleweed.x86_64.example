@@ -63,7 +63,7 @@ Vagrant.configure("2") do |config|
 
       override.vm.provision 'shell', run: 'once', inline: 'echo "send host-name \"semantic-release-box\";" >> /etc/dhclient.conf', privileged: true
       override.vm.provision 'shell', run: 'once', inline: 'echo nameserver 8.8.8.8 | tee /etc/resolv.conf', privileged: true
-      override.vm.provision 'shell', run: 'once', inline: 'sudo zypper install -y avahi-utils nss-mdns && sudo systemctl start avahi-daemon && sudo systemctl enable avahi-daemon'
+      override.vm.provision 'shell', run: 'once', inline: 'zypper install -y avahi-utils nss-mdns && systemctl start avahi-daemon && systemctl enable avahi-daemon', privileged: true
       override.vm.provision 'shell', run: 'once', inline: 'zypper install -y -t pattern devel_basis', privileged: true
       override.vm.provision 'shell', run: 'once', inline: 'zypper install -y sysvinit-tools insserv-compat python3 python3-pip python3-setuptools python3-devel python3-virtualenv python3-pyzmq-devel', privileged: true
       override.vm.provision 'shell', run: 'once', inline: 'ln --symbolic /etc/os-release /etc/SuSE-release', privileged: true

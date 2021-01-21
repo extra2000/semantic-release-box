@@ -58,7 +58,7 @@ Vagrant.configure("2") do |config|
       v.customize ['modifyvm', :id, '--audio', 'none']
 
       override.vm.provision 'shell', run: 'always', inline: 'rm -rf /etc/resolv.conf && echo nameserver 10.0.2.3 | tee /etc/resolv.conf', privileged: true
-      override.vm.provision 'shell', run: 'once', inline: 'sudo apt update && sudo apt install -y avahi-utils libnss-mdns && sudo systemctl start avahi-daemon && sudo systemctl enable avahi-daemon'
+      override.vm.provision 'shell', run: 'once', inline: 'apt update && apt install -y avahi-utils libnss-mdns && systemctl start avahi-daemon && systemctl enable avahi-daemon', privileged: true
       salt_provision_semantic_release_box override
       override.vm.provision 'reload'
     end
