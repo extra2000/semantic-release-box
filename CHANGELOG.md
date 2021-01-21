@@ -1,5 +1,30 @@
 # Changelog
 
+## [2.1.0](https://github.com/extra2000/semantic-release-box/compare/v2.0.1...v2.1.0) (2021-01-21)
+
+
+### Features
+
+* **submodule:** Update `podman-formula` to [v2.2.1](https://github.com/extra2000/podman-formula/releases/tag/v2.2.1) ([a93351f](https://github.com/extra2000/semantic-release-box/commit/a93351f43e5e2426a2bd8eeaf7ba17931cca1d17))
+* **vagrant:** Add Fedora 33 `x86_64` box ([dfba4eb](https://github.com/extra2000/semantic-release-box/commit/dfba4eb9a6240fe0aaedf2a9a47241c8a9e890e6))
+
+
+### Documentations
+
+* **README:** Default to Fedora 33 ([5e5aeb1](https://github.com/extra2000/semantic-release-box/commit/5e5aeb1a05143cf48cb1b05496a4ed168465f079))
+
+
+### Continuous Integrations
+
+* **AppVeyor:** Change Fedora 32 to Fedora 33 ([978ca09](https://github.com/extra2000/semantic-release-box/commit/978ca0964f7645d395091ec38d47888c5b637066))
+* **AppVeyor:** Upgrade Ubuntu from `18.04` to `20.04` ([1d6ebda](https://github.com/extra2000/semantic-release-box/commit/1d6ebda5b159a50c651b0e8faa0ab0f57e6b119a))
+
+
+### Code Refactoring
+
+* **vagrant:** Replace `sudo` with `privileged: true` ([3eb6550](https://github.com/extra2000/semantic-release-box/commit/3eb655050f042c801979bd967d503976941c8c60))
+* **vagrant:** Standardize Salt Minion installations to `v3002.2` and via `git` ([e864fba](https://github.com/extra2000/semantic-release-box/commit/e864fbac3082bc899544afd7f435869665102885))
+
 ### [2.0.1](https://github.com/extra2000/semantic-release-box/compare/v2.0.0...v2.0.1) (2020-11-28)
 
 
