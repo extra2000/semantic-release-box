@@ -2,3 +2,4 @@
 salt/roots/pillar/semantic-release.sls
 vagrant/*
 !vagrant/examples
+salt/roots/pillar/podman.sls
