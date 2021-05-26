@@ -18,8 +18,9 @@ $ cd semantic-release-box
 
 ## Preparing environment
 
-Create `salt/roots/pillar/semantic-release.sls` based on example and then edit its values:
+Create pillar files based on examples. You may need to edit values in `salt/roots/pillar/semantic-release.sls`:
 ```
+$ cp -v salt/roots/pillar/podman.sls.example salt/roots/pillar/podman.sls
 $ cp -v salt/roots/pillar/semantic-release.sls.example salt/roots/pillar/semantic-release.sls
 ```
 
