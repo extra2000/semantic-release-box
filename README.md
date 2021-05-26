@@ -26,7 +26,7 @@ $ cp -v salt/roots/pillar/semantic-release.sls.example salt/roots/pillar/semanti
 
 Create a vagrant file from example:
 ```
-$ cp -v vagrant/examples/Vagrantfile.semantic-release-box.fedora-33.x86_64.example vagrant/Vagrantfile.semantic-release-box
+$ cp -v vagrant/examples/Vagrantfile.semantic-release-box.fedora-34.x86_64.example vagrant/Vagrantfile.semantic-release-box
 ```
 
 Create Vagrant box and apply `state.highstate`:
