@@ -9,6 +9,7 @@ install:
   - git submodule init
   - git submodule update
 build_script:
+  - cp -v salt/roots/pillar/podman.sls.example salt/roots/pillar/podman.sls
   - cp -v salt/roots/pillar/semantic-release.sls.example salt/roots/pillar/semantic-release.sls
   - cp -v vagrant/examples/Vagrantfile.semantic-release-box.fedora-33.x86_64.example vagrant/Vagrantfile.semantic-release-box
   - sudo vagrant up --provider=libvirt
